@@ -1,0 +1,75 @@
+:root {
+  --bright_orange: hsl(31, 77%, 52%);
+  --dark_cyan: hsl(184, 100%, 22%);
+  --very_dark_cyan: hsl(179, 100%, 13%);
+
+  --transparent_white: hsla(0, 0%, 100%, 0.75);
+  --very_light_gray: hsl(0, 0%, 95%);
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  margin: 20px 20px;
+
+  font-size: 15px;
+}
+
+.container {
+  overflow: hidden;
+  border-radius: 1em;
+}
+
+.card {
+  background-color: var(--bright_orange);
+  padding: 3em;
+}
+
+.card p {
+  font-weight: 100;
+  line-height: 1.6em;
+  color: var(--transparent_white);
+  margin-bottom: 3em;
+}
+.cyan {
+  background-color: var(--dark_cyan);
+}
+.lux {
+  background-color: var(--very_dark_cyan);
+}
+.card h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--very_light_gray);
+  font-size: 2.5em;
+}
+
+.card a {
+  text-decoration: none;
+  background-color: var(--very_light_gray);
+  padding: 1em;
+  color: var(--bright_orange);
+  border-radius: 2em;
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+.cyan a {
+  color: var(--dark_cyan);
+}
+
+.lux a {
+  color: var(--very_dark_cyan);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    margin: 0 16em;
+    align-items: stretch;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
